@@ -5,54 +5,60 @@ export default function Home() {
     <div className="font-primary bg-[#f4f6f8] min-h-screen">
       
       {/* ── Hero Section ── */}
-      <section className="pt-36 pb-20 relative">
-        <div className="max-w-[1280px] mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <section className="pt-36 pb-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[#f4f6f8] z-0">
+           {/* Decorative background shapes */}
+           <div className="absolute top-20 left-10 w-64 h-64 bg-[#c62d70] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+           <div className="absolute top-40 right-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+           <div className="absolute -bottom-8 left-40 w-72 h-72 bg-[#c62d70] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"></div>
+        </div>
+        
+        <div className="max-w-[1280px] mx-auto px-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
             {/* Left Column */}
-            <div className="max-w-[500px]">
-              <h1 className="text-[56px] lg:text-[72px] font-extrabold leading-[1.1] text-[#333] mb-4">
-                India's #1 <br /> Ride-hailing App
+            <div className="max-w-[560px]">
+              <div className="inline-block px-4 py-2 bg-pink-100 rounded-full mb-6">
+                 <span className="text-[#c62d70] font-semibold tracking-wide uppercase text-sm">Ride With Pride</span>
+              </div>
+              <h1 className="text-[52px] lg:text-[68px] font-extrabold leading-[1.1] text-[#333] mb-6 tracking-tight">
+                Welcome to <br />
+                <span className="text-[#c62d70]">Pink Auto</span>
               </h1>
-              <p className="text-[22px] text-[#4b5563] mb-10 font-medium">
-                Quick, Affordable rides at your doorstep
+              <p className="text-[20px] text-gray-600 mb-10 font-medium leading-relaxed">
+                Experience the pink standard of auto commuting in India. We prioritize your safety, comfort, and time above all. Quick, affordable, and reliable rides right at your doorstep.
               </p>
               
-              <div className="bg-transparent flex flex-col gap-4 max-w-[480px]">
-                {/* Pickup Input */}
-                <div className="flex items-center bg-[#f4f6f8] border border-gray-300 rounded-xl px-5 py-4">
-                  <div className="w-4 h-4 bg-black rounded-full flex-shrink-0 relative mr-4">
-                    <div className="absolute inset-[4px] bg-[#f4f6f8] rounded-full"></div>
-                  </div>
-                  <input 
-                    type="text" 
-                    placeholder="Enter Pickup Location" 
-                    className="w-full bg-transparent border-none outline-none text-[#333] text-lg placeholder-gray-500"
-                  />
-                </div>
-
-                {/* Drop Input */}
-                <div className="flex items-center bg-[#f4f6f8] border border-gray-300 rounded-xl px-5 py-4">
-                  <div className="w-4 h-4 border-[3px] border-black rounded-full flex-shrink-0 mr-4"></div>
-                  <input 
-                    type="text" 
-                    placeholder="Enter Drop Location" 
-                    className="w-full bg-transparent border-none outline-none text-[#333] text-lg placeholder-gray-500"
-                  />
-                </div>
-
-                <button className="bg-[#f9c935] text-black w-full py-4 rounded-xl font-bold text-2xl mt-4 hover:bg-[#e0b42c] transition-colors shadow-sm">
-                  Book Ride
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button className="bg-[#c62d70] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#a3245c] transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+                  Download App
+                </button>
+                <button className="bg-white text-[#c62d70] border-2 border-[#c62d70] px-8 py-4 rounded-xl font-bold text-lg hover:bg-pink-50 transition-all">
+                  Explore Services
                 </button>
               </div>
             </div>
 
             {/* Right Column (Hero Image) */}
-            <div className="relative h-[600px] hidden lg:block">
-              {/* Background grey curved shape */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[85%] h-[90%] bg-gradient-to-tr from-[#d1d5db] to-[#f4f6f8] rounded-tl-[120px] rounded-bl-[120px] rounded-tr-[20px] rounded-br-[20px] shadow-sm overflow-hidden flex items-center justify-center">
-                {/* Cityline overlay inside the shape */}
-                <img src="https://rapido.bike/images/home-hero.webp" alt="Rapido Vehicles" className="absolute w-[110%] max-w-none object-cover" style={{ left: '-15%' }} />
+            <div className="relative h-[550px] hidden lg:flex items-center justify-center">
+              {/* Image Container with gradient outline */}
+              <div className="relative w-full h-[90%] bg-white rounded-3xl shadow-2xl p-4 transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                <div className="w-full h-full rounded-2xl overflow-hidden bg-gray-100 relative">
+                   {/* We will still use the hero image but style it nicely within this frame */}
+                   <img src="https://rapido.bike/images/home-hero.webp" alt="Pink Auto Vehicles" className="w-full h-full object-cover" />
+                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                   <div className="absolute bottom-6 left-6 text-white font-bold text-2xl drop-shadow-md">
+                     Your Journey, Our Priority
+                   </div>
+                </div>
+                {/* Decorative floating elements */}
+                <div className="absolute -left-8 top-10 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
+                   <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-2xl">✓</div>
+                   <div>
+                     <div className="text-sm text-gray-500 font-medium">Safe Rides</div>
+                     <div className="font-bold text-black">100% Verified</div>
+                   </div>
+                </div>
               </div>
             </div>
 
@@ -65,7 +71,7 @@ export default function Home() {
         <div className="max-w-[1280px] mx-auto px-6">
           <div className="mb-14 relative inline-block">
             <h2 className="text-[48px] font-bold text-[#333] relative z-10">Our Services</h2>
-            <div className="absolute bottom-1 left-0 w-[60%] h-[6px] bg-[#f9c935] z-0"></div>
+            <div className="absolute bottom-1 left-0 w-[60%] h-[6px] bg-[#c62d70] z-0"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -94,7 +100,7 @@ export default function Home() {
         <div className="max-w-[1280px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: 'Quick Pickup', desc: 'Pickups within minutes that help you save time on every ride. A Rapido is always nearby when you need to get moving.', img: 'https://rapido.bike/images/Quick_Pickup.webp' },
+              { title: 'Quick Pickup', desc: 'Pickups within minutes that help you save time on every ride. A Pink Auto is always nearby when you need to get moving.', img: 'https://rapido.bike/images/Quick_Pickup.webp' },
               { title: 'Best Fares', desc: 'Affordable prices designed for everyday rides. Travel more, spend less without compromising on comfort.', img: 'https://rapido.bike/images/Best_Fares.webp' },
               { title: 'Never Too Far', desc: 'Present across 400+ cities and counting. Wherever you go, find a Rapido ride close by.', img: 'https://rapido.bike/images/Never_Too_Far.webp' },
             ].map((feature, i) => (
@@ -110,7 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Earn with Rapido ── */}
+      {/* ── Earn with Pink Auto ── */}
       <section className="bg-[#224772] text-white">
         <div className="max-w-[1280px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -118,21 +124,21 @@ export default function Home() {
             {/* Left Image */}
             <div className="p-10 lg:p-16 flex items-center justify-center">
               <div className="rounded-[32px] overflow-hidden shadow-2xl h-[400px] w-full">
-                <img src="https://rapido.bike/images/Rapido-b2b.webp" alt="Earn with Rapido" className="w-full h-full object-cover" />
+                <img src="https://rapido.bike/images/Pink Auto-b2b.webp" alt="Earn with Pink Auto" className="w-full h-full object-cover" />
               </div>
             </div>
 
             {/* Right Content */}
             <div className="p-10 lg:p-16 flex flex-col justify-center">
               <div className="mb-10 relative inline-block">
-                <h2 className="text-[56px] font-bold text-white relative z-10 leading-tight">Earn with <br /> Rapido</h2>
-                <div className="absolute bottom-1 left-0 w-[80%] h-[6px] bg-[#f9c935] z-0"></div>
+                <h2 className="text-[56px] font-bold text-white relative z-10 leading-tight">Earn with <br /> Pink Auto</h2>
+                <div className="absolute bottom-1 left-0 w-[80%] h-[6px] bg-[#c62d70] z-0"></div>
               </div>
               <p className="text-[26px] leading-[1.5] text-white/90 mb-10">
-                Become a Rapido Captain. Ride when you want, work how you want, and earn on your own terms.
+                Become a Pink Auto Captain. Ride when you want, work how you want, and earn on your own terms.
               </p>
               <div>
-                <button className="bg-[#f9c935] text-black px-10 py-4 rounded-full font-bold text-xl flex items-center gap-2 hover:bg-white transition-colors">
+                <button className="bg-[#c62d70] text-white px-10 py-4 rounded-full font-bold text-xl flex items-center gap-2 hover:bg-white hover:text-black transition-colors">
                   Start Earning
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -151,15 +157,15 @@ export default function Home() {
           <div className="text-center mb-16 relative flex justify-center">
             <div className="relative inline-block">
               <h2 className="text-[56px] font-bold text-[#333] relative z-10">Download Now</h2>
-              <div className="absolute bottom-2 left-[10%] w-[80%] h-[6px] bg-[#f9c935] z-0"></div>
+              <div className="absolute bottom-2 left-[10%] w-[80%] h-[6px] bg-[#c62d70] z-0"></div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Customer App Card */}
             <div className="bg-[#f4f6f8] rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.06)] p-12 flex items-center gap-8 border border-gray-100 hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)] transition-shadow">
-              <div className="bg-[#f9c935] px-10 py-5 rounded-[40px] flex items-center justify-center min-w-[200px]">
-                <span className="font-extrabold text-4xl tracking-tight text-black leading-none">rapido</span>
+              <div className="bg-[#f4f6f8] px-6 py-4 rounded-[40px] flex items-center justify-center min-w-[200px] h-[120px] shadow-sm border border-gray-200">
+                <img src="/logo.png" alt="Pink Auto" className="h-full object-contain" />
               </div>
               <h3 className="text-3xl font-medium text-black leading-snug">
                 Bike-Taxi, <br /> Auto & Cabs
@@ -168,9 +174,9 @@ export default function Home() {
 
             {/* Captain App Card */}
             <div className="bg-[#f4f6f8] rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.06)] p-12 flex items-center gap-8 border border-gray-100 hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)] transition-shadow">
-              <div className="bg-[#f9c935] px-10 py-5 rounded-[40px] flex items-center justify-center flex-col min-w-[200px]">
-                <span className="font-extrabold text-4xl tracking-tight text-black leading-none mb-1">rapido</span>
-                <span className="font-medium text-lg text-black self-end mr-2">Captain</span>
+              <div className="bg-[#f4f6f8] px-6 py-4 rounded-[40px] flex items-center justify-center flex-col min-w-[200px] h-[120px] shadow-sm border border-gray-200 relative">
+                <img src="/logo.png" alt="Pink Auto Captain" className="h-[70%] object-contain mb-2" />
+                <span className="font-bold text-sm text-[#c62d70] uppercase tracking-wider">Captain</span>
               </div>
               <h3 className="text-3xl font-medium text-black leading-snug">
                 Drive & <br /> Earn

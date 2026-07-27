@@ -9,9 +9,9 @@ export default function Careers() {
           <div>
             <h4 className="text-[48px] font-extrabold text-black leading-tight mb-6">Be a part of our team.</h4>
             <p className="text-gray-600 text-[20px] mb-8 leading-relaxed max-w-md">
-              We are so glad you want to join us in exploring a world of endless opportunities at Rapido. Let’s find a spot for you.
+              We are so glad you want to join us in exploring a world of endless opportunities at Pink Auto. Let’s find a spot for you.
             </p>
-            <a href="https://rapido.darwinbox.in/ms/candidate/careers" target="_blank" rel="noreferrer" className="inline-block bg-[#f9c935] text-black font-bold text-lg px-8 py-3 rounded-full hover:bg-yellow-400 transition-colors">
+            <a href="https://rapido.darwinbox.in/ms/candidate/careers" target="_blank" rel="noreferrer" className="inline-block bg-[#c62d70] text-white font-bold text-lg px-8 py-3 rounded-full hover:bg-[#a3245c] transition-colors">
               View Jobs
             </a>
           </div>
@@ -22,7 +22,7 @@ export default function Careers() {
             <div className="absolute left-0 bottom-0 w-2/3 h-[60%] bg-gray-300 rounded-3xl overflow-hidden shadow-xl z-20 border-8 border-[#f4f6f8]">
                <img src="https://rapido.bike/images/career_home_2.png" alt="Career Image 2" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
             </div>
-            <div className="absolute top-10 left-10 w-20 h-20 rounded-full border-4 border-[#f9c935] z-0"></div>
+            <div className="absolute top-10 left-10 w-20 h-20 rounded-full border-4 border-[#c62d70] z-0"></div>
           </div>
         </div>
       </section>
@@ -32,7 +32,7 @@ export default function Careers() {
         <div className="max-w-[1280px] mx-auto">
           <h2 className="text-[36px] font-bold text-black mb-16 relative inline-block">
             Why work with us
-            <div className="absolute -bottom-2 left-0 w-16 h-1 bg-[#f9c935]"></div>
+            <div className="absolute -bottom-2 left-0 w-16 h-1 bg-[#c62d70]"></div>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
@@ -75,11 +75,11 @@ export default function Careers() {
         <div className="max-w-[1280px] mx-auto text-center relative z-10">
           <h2 className="text-[36px] font-bold text-white mb-16 relative inline-block">
             What our employees say
-            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-[#f9c935]"></div>
+            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-1 bg-[#c62d70]"></div>
           </h2>
           <div className="bg-white/10 backdrop-blur-md max-w-3xl mx-auto rounded-3xl p-10 border border-white/20">
-            <p className="text-white text-xl italic">"Rapido is a fantastic place to grow..."</p>
-            <div className="mt-8 text-gray-400">- Rapido Employee</div>
+            <p className="text-white text-xl italic">"Pink Auto is a fantastic place to grow..."</p>
+            <div className="mt-8 text-gray-400">- Pink Auto Employee</div>
           </div>
         </div>
       </section>

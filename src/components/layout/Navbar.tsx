@@ -25,9 +25,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <div className="bg-[#f9c935] px-6 py-2 rounded-full flex items-center justify-center">
-            <span className="font-extrabold text-[28px] tracking-tight text-black leading-none">rapido</span>
-          </div>
+          <img src="/logo.png" alt="Pink Auto Logo" className="h-12 w-auto object-contain" />
         </Link>
 
         {/* Navigation Links */}

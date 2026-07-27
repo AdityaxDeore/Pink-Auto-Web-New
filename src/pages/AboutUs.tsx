@@ -20,7 +20,7 @@ export default function AboutUs() {
             <div>
               <h5 className="font-bold text-[20px] text-[#333] mb-2">What makes us different?</h5>
               <p className="text-gray-500 text-[18px] leading-relaxed font-light">
-                Our bike taxis can dodge the traffic during peak hours and get you to the destination in a jiffy! So when you think travel, think Rapido.
+                Our bike taxis can dodge the traffic during peak hours and get you to the destination in a jiffy! So when you think travel, think Pink Auto.
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function AboutUs() {
               Champions of our success<br />story
             </h2>
             <p className="text-gray-500 text-[18px] leading-relaxed font-light">
-              Rapido has come a long way ever since its inception in 2015. With a lot of hardwork and perseverance we have made a place for ourselves in the market. As a brand and as a service, it is our constant endeavour to redefine ourselves.
+              Pink Auto has come a long way ever since its inception in 2015. With a lot of hardwork and perseverance we have made a place for ourselves in the market. As a brand and as a service, it is our constant endeavour to redefine ourselves.
             </p>
           </div>
 
@@ -95,11 +95,11 @@ export default function AboutUs() {
       {/* Work With Us Section */}
       <section className="bg-black py-20 px-6 text-center">
         <div className="max-w-[1280px] mx-auto">
-          <h3 className="text-[40px] font-bold text-white mb-4">Jobs @ Rapido</h3>
+          <h3 className="text-[40px] font-bold text-white mb-4">Jobs @ Pink Auto</h3>
           <p className="text-gray-300 text-[18px] mb-8 font-light">
             Join us in exploring a world of endless opportunities. Let’s find a spot for you.
           </p>
-          <a href="/careers" className="inline-block bg-[#f9c935] text-black font-bold text-lg px-10 py-3 flex items-center justify-center w-max mx-auto rounded-full hover:bg-yellow-400 transition-colors">
+          <a href="/careers" className="inline-block bg-[#c62d70] text-white font-bold text-lg px-10 py-3 flex items-center justify-center w-max mx-auto rounded-full hover:bg-[#a3245c] transition-colors">
             Work with us
           </a>
         </div>

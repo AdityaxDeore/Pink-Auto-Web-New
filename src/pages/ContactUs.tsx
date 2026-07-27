@@ -14,22 +14,22 @@ export default function ContactUs() {
             <form className="flex flex-col gap-6">
               <div className="flex flex-col gap-2">
                 <label className="text-[14px] font-semibold text-gray-700">Name <sup className="text-red-500">*</sup></label>
-                <input type="text" placeholder="Enter your name" className="bg-[#f8f9fa] border-none rounded-lg p-4 text-[15px] focus:outline-none focus:ring-2 focus:ring-[#f9c935]" />
+                <input type="text" placeholder="Enter your name" className="bg-[#f8f9fa] border-none rounded-lg p-4 text-[15px] focus:outline-none focus:ring-2 focus:ring-[#c62d70]" />
               </div>
               
               <div className="flex flex-col gap-2">
                 <label className="text-[14px] font-semibold text-gray-700">Email Address <sup className="text-red-500">*</sup></label>
-                <input type="email" placeholder="Enter your email" className="bg-[#f8f9fa] border-none rounded-lg p-4 text-[15px] focus:outline-none focus:ring-2 focus:ring-[#f9c935]" />
+                <input type="email" placeholder="Enter your email" className="bg-[#f8f9fa] border-none rounded-lg p-4 text-[15px] focus:outline-none focus:ring-2 focus:ring-[#c62d70]" />
               </div>
               
               <div className="flex flex-col gap-2">
                 <label className="text-[14px] font-semibold text-gray-700">Mobile Number <sup className="text-red-500">*</sup></label>
-                <input type="tel" placeholder="Enter your mobile number" maxLength={10} className="bg-[#f8f9fa] border-none rounded-lg p-4 text-[15px] focus:outline-none focus:ring-2 focus:ring-[#f9c935]" />
+                <input type="tel" placeholder="Enter your mobile number" maxLength={10} className="bg-[#f8f9fa] border-none rounded-lg p-4 text-[15px] focus:outline-none focus:ring-2 focus:ring-[#c62d70]" />
               </div>
               
               <div className="flex flex-col gap-2">
                 <label className="text-[14px] font-semibold text-gray-700">You are a <sup className="text-red-500">*</sup></label>
-                <select className="bg-[#f8f9fa] border-none rounded-lg p-4 text-[15px] text-gray-600 focus:outline-none focus:ring-2 focus:ring-[#f9c935] appearance-none">
+                <select className="bg-[#f8f9fa] border-none rounded-lg p-4 text-[15px] text-gray-600 focus:outline-none focus:ring-2 focus:ring-[#c62d70] appearance-none">
                   <option disabled selected>-select-</option>
                   <option value="customer">Customer</option>
                   <option value="captain">Captain</option>
@@ -38,7 +38,7 @@ export default function ContactUs() {
 
               <div className="flex flex-col gap-2">
                 <label className="text-[14px] font-semibold text-gray-700">Select Query <sup className="text-red-500">*</sup></label>
-                <select className="bg-[#f8f9fa] border-none rounded-lg p-4 text-[15px] text-gray-600 focus:outline-none focus:ring-2 focus:ring-[#f9c935] appearance-none">
+                <select className="bg-[#f8f9fa] border-none rounded-lg p-4 text-[15px] text-gray-600 focus:outline-none focus:ring-2 focus:ring-[#c62d70] appearance-none">
                   <option disabled selected>-select-</option>
                   <option value="other">Other</option>
                 </select>
@@ -46,10 +46,10 @@ export default function ContactUs() {
               
               <div className="flex flex-col gap-2">
                 <label className="text-[14px] font-semibold text-gray-700">Comment <sup className="text-red-500">*</sup></label>
-                <textarea placeholder="Enter your comment" rows={4} className="bg-[#f8f9fa] border-none rounded-lg p-4 text-[15px] focus:outline-none focus:ring-2 focus:ring-[#f9c935] resize-none"></textarea>
+                <textarea placeholder="Enter your comment" rows={4} className="bg-[#f8f9fa] border-none rounded-lg p-4 text-[15px] focus:outline-none focus:ring-2 focus:ring-[#c62d70] resize-none"></textarea>
               </div>
               
-              <button type="button" className="bg-[#f9c935] text-black font-bold text-[16px] py-4 rounded-lg hover:bg-yellow-400 transition-colors mt-2">
+              <button type="button" className="bg-[#c62d70] text-white font-bold text-[16px] py-4 rounded-lg hover:bg-[#a3245c] transition-colors mt-2">
                 Submit
               </button>
             </form>
@@ -57,12 +57,12 @@ export default function ContactUs() {
 
           {/* Right Address Section */}
           <div className="bg-black p-10 md:p-14 w-full md:w-2/5 text-white flex flex-col justify-center relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-[#f9c935] opacity-20 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-10 left-10 w-24 h-24 bg-[#f9c935] opacity-20 rounded-full blur-2xl"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#c62d70] opacity-20 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-10 left-10 w-24 h-24 bg-[#c62d70] opacity-20 rounded-full blur-2xl"></div>
             
             <div className="z-10 flex flex-col gap-10">
               <div>
-                <label className="text-[#f9c935] font-semibold text-[14px] uppercase tracking-wider block mb-2">Registered Office Address:</label>
+                <label className="text-[#c62d70] font-semibold text-[14px] uppercase tracking-wider block mb-2">Registered Office Address:</label>
                 <p className="text-gray-300 text-[15px] leading-relaxed">
                   Roppen Transportation Services Pvt Ltd, 3rd Floor, Sai Prithvi Arcade, Megha Hills, Sri Rama Colony, Madhapur, Hyderabad - 500081.
                 </p>
@@ -70,14 +70,14 @@ export default function ContactUs() {
               </div>
 
               <div>
-                <label className="text-[#f9c935] font-semibold text-[14px] uppercase tracking-wider block mb-2">City Office:</label>
+                <label className="text-[#c62d70] font-semibold text-[14px] uppercase tracking-wider block mb-2">City Office:</label>
                 <p className="text-gray-300 text-[15px] leading-relaxed">
-                  Rapido office, 648, 1st Main Rd, Muneswara Nagar, Sector 6, HSR Layout, Bengaluru, Karnataka 560102
+                  Pink Auto office, 648, 1st Main Rd, Muneswara Nagar, Sector 6, HSR Layout, Bengaluru, Karnataka 560102
                 </p>
               </div>
 
               <div>
-                <label className="text-[#f9c935] font-semibold text-[14px] uppercase tracking-wider block mb-2">Corporate Office:</label>
+                <label className="text-[#c62d70] font-semibold text-[14px] uppercase tracking-wider block mb-2">Corporate Office:</label>
                 <p className="text-gray-300 text-[15px] leading-relaxed">
                   Mantri Commercio - Spatium Tower A, Sy No 51/2, 51/3, 51/4, Of Devarabeesanahalli Village And Hjem 39/5 Of Kariyammana Agrahara Village Varthur Hobli, Bangalore East Taluk, Bangalore.
                 </p>
