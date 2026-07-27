@@ -5,7 +5,6 @@ const navItems = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },
   { label: 'Safety', path: '/safety' },
-  { label: 'Careers', path: '/careers' },
   { label: 'Contact Us', path: '/contact' },
 ];
 
@@ -20,28 +19,28 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#f4f6f8]/90 backdrop-blur-md shadow-sm py-4' : 'bg-[#f4f6f8] py-6'}`}>
-      <div className="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#f4f6f8]/90 backdrop-blur-md shadow-sm py-1' : 'bg-[#f4f6f8] py-2'}`}>
+      <div className="max-w-[1280px] mx-auto px-6 flex items-center">
         
         {/* Logo */}
-        <Link to="/" className="flex items-center">
-          <img src="/logo.png" alt="Pink Auto Logo" className="h-12 w-auto object-contain" />
+        <Link to="/" className="flex items-center mr-auto">
+          <img src="/logo.png" alt="Pink Auto Logo" className="h-14 w-auto object-contain" />
         </Link>
 
         {/* Navigation Links */}
-        <ul className="hidden lg:flex items-center gap-8 list-none m-0 p-0">
+        <ul className="hidden lg:flex items-center gap-7 list-none m-0 p-0 mr-3">
           {navItems.map((item) => {
             const isActive = location.pathname === item.path || (item.path === '/' && location.pathname === '');
             return (
               <li key={item.path} className="relative group">
                 <Link 
                   to={item.path} 
-                  className={`text-[16px] transition-colors ${isActive ? 'font-semibold text-black' : 'font-medium text-[#333] hover:text-black'}`}
+                  className={`text-[12px] transition-colors ${isActive ? 'font-semibold text-black' : 'font-medium text-[#333] hover:text-black'}`}
                 >
                   {item.label}
                 </Link>
                 {isActive && (
-                  <div className="absolute -bottom-2 left-0 w-full h-[3px] bg-black rounded-full" />
+                  <div className="absolute -bottom-1.5 left-0 w-full h-[3px] bg-black rounded-sm" />
                 )}
               </li>
             );
@@ -50,7 +49,7 @@ export default function Navbar() {
 
         {/* Download Button */}
         <div className="hidden lg:block">
-          <button className="bg-black text-white px-7 py-3 rounded-full font-semibold text-[15px] hover:bg-gray-800 transition-colors shadow-md">
+          <button className="bg-black text-white px-5 py-1.5 rounded-full font-semibold text-[12px] hover:bg-gray-800 transition-colors shadow-md">
             Download App
           </button>
         </div>
