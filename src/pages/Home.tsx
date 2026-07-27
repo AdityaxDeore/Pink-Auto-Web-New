@@ -21,19 +21,21 @@ export default function Home() {
               <div className="inline-block px-4 py-2 bg-pink-100 rounded-full mb-6">
                  <span className="text-[#c62d70] font-semibold tracking-wide uppercase text-sm">Ride With Pride</span>
               </div>
-              <h1 className="text-[52px] lg:text-[68px] font-extrabold leading-[1.1] text-[#333] mb-6 tracking-tight">
-                Welcome to <br />
-                <span className="text-[#c62d70]">Pink Auto</span>
+              <h1 className="text-[32px] lg:text-[44px] font-bold leading-[1.2] text-[#333] mb-6 tracking-tight" style={{ fontFamily: 'Inter, sans-serif' }}>
+                Your Trusted <br />
+                <span className="text-[#c62d70]">Pink Auto</span> Service
               </h1>
-              <p className="text-[20px] text-gray-600 mb-10 font-medium leading-relaxed">
-                Experience the pink standard of auto commuting in India. We prioritize your safety, comfort, and time above all. Quick, affordable, and reliable rides right at your doorstep.
+              <p className="text-[15px] text-gray-600 mb-10 font-medium leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
+                Safe, Comfortable & Reliable Auto Service for Women, Students, Senior Citizens and Families.
+                <br /><br />
+                <span className="italic opacity-80">"तुमची भरवशाची पिंक ऑटो सेवा"</span>
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-[#c62d70] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#a3245c] transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+                <button className="bg-[#c62d70] text-white px-6 py-3 rounded-lg font-bold text-[15px] hover:bg-[#a3245c] transition-all shadow-md hover:shadow-lg hover:-translate-y-1">
                   Download App
                 </button>
-                <button className="bg-white text-[#c62d70] border-2 border-[#c62d70] px-8 py-4 rounded-xl font-bold text-lg hover:bg-pink-50 transition-all">
+                <button className="bg-white text-[#c62d70] border-2 border-[#c62d70] px-6 py-3 rounded-lg font-bold text-[15px] hover:bg-pink-50 transition-all">
                   Explore Services
                 </button>
               </div>
