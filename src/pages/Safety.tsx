@@ -30,16 +30,16 @@ export default function Safety() {
         <div className="max-w-[1280px] mx-auto py-12 px-6 flex flex-col items-center">
           {activeTab === 'overview' && (
             <div className="w-full flex flex-col items-center gap-8">
-              <img src="/images/safety-overview-header.png" alt="Safety Overview" className="w-full max-w-4xl bg-white shadow-sm rounded-2xl p-4 min-h-[200px]" onError={(e) => e.currentTarget.style.display = 'none'} />
-              <img src="/images/covers-everyone.png" alt="Covers Everyone" className="w-full max-w-4xl bg-white shadow-sm rounded-2xl p-4 min-h-[200px]" onError={(e) => e.currentTarget.style.display = 'none'} />
+              <img src="https://rapido.bike/images/safety-overview-header.png" alt="Safety Overview" className="w-full max-w-4xl bg-white shadow-sm rounded-2xl p-4 min-h-[200px]" onError={(e) => e.currentTarget.style.display = 'none'} />
+              <img src="https://rapido.bike/images/covers-everyone.png" alt="Covers Everyone" className="w-full max-w-4xl bg-white shadow-sm rounded-2xl p-4 min-h-[200px]" onError={(e) => e.currentTarget.style.display = 'none'} />
               
               <div className="flex flex-col md:flex-row gap-8 w-full max-w-4xl">
-                <img src="/images/cover-customer.png" alt="For Customers" className="flex-1 bg-white shadow-sm rounded-2xl p-4 min-h-[200px]" onError={(e) => e.currentTarget.style.display = 'none'} />
-                <img src="/images/cover-captain.png" alt="For Captains" className="flex-1 bg-white shadow-sm rounded-2xl p-4 min-h-[200px]" onError={(e) => e.currentTarget.style.display = 'none'} />
+                <img src="https://rapido.bike/images/cover-customer.png" alt="For Customers" className="flex-1 bg-white shadow-sm rounded-2xl p-4 min-h-[200px]" onError={(e) => e.currentTarget.style.display = 'none'} />
+                <img src="https://rapido.bike/images/cover-captain.png" alt="For Captains" className="flex-1 bg-white shadow-sm rounded-2xl p-4 min-h-[200px]" onError={(e) => e.currentTarget.style.display = 'none'} />
               </div>
               
-              <img src="/images/safety_groups_overview.png" alt="Safety Groups" className="w-full max-w-4xl bg-white shadow-sm rounded-2xl p-4 min-h-[200px]" onError={(e) => e.currentTarget.style.display = 'none'} />
-              <img src="/images/safety_way_forward_overview.png" alt="Way Forward" className="w-full max-w-4xl bg-white shadow-sm rounded-2xl p-4 min-h-[200px]" onError={(e) => e.currentTarget.style.display = 'none'} />
+              <img src="https://rapido.bike/images/safety_groups_overview.png" alt="Safety Groups" className="w-full max-w-4xl bg-white shadow-sm rounded-2xl p-4 min-h-[200px]" onError={(e) => e.currentTarget.style.display = 'none'} />
+              <img src="https://rapido.bike/images/safety_way_forward_overview.png" alt="Way Forward" className="w-full max-w-4xl bg-white shadow-sm rounded-2xl p-4 min-h-[200px]" onError={(e) => e.currentTarget.style.display = 'none'} />
             </div>
           )}
 

@@ -17,10 +17,10 @@ export default function Careers() {
           </div>
           <div className="relative h-[450px]">
             <div className="absolute right-0 top-0 w-3/4 h-[80%] bg-gray-200 rounded-3xl overflow-hidden shadow-lg z-10">
-               <img src="/images/career_home_1.png" alt="Career Image 1" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
+               <img src="https://rapido.bike/images/career_home_1.png" alt="Career Image 1" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
             </div>
             <div className="absolute left-0 bottom-0 w-2/3 h-[60%] bg-gray-300 rounded-3xl overflow-hidden shadow-xl z-20 border-8 border-[#f4f6f8]">
-               <img src="/images/career_home_2.png" alt="Career Image 2" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
+               <img src="https://rapido.bike/images/career_home_2.png" alt="Career Image 2" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
             </div>
             <div className="absolute top-10 left-10 w-20 h-20 rounded-full border-4 border-[#f9c935] z-0"></div>
           </div>
@@ -39,21 +39,21 @@ export default function Careers() {
             {/* Benefit 1 */}
             <div className="flex flex-col items-start text-left">
               <div className="w-20 h-20 mb-6">
-                <img src="/images/work_1.png" alt="Reward" className="w-full h-full object-contain" onError={(e) => e.currentTarget.style.display = 'none'} />
+                <img src="https://rapido.bike/images/work_1.png" alt="Reward" className="w-full h-full object-contain" onError={(e) => e.currentTarget.style.display = 'none'} />
               </div>
               <p className="text-[18px] text-gray-800 font-medium">We pride ourselves on rewarding great work with great compensation.</p>
             </div>
             {/* Benefit 2 */}
             <div className="flex flex-col items-start text-left">
               <div className="w-20 h-20 mb-6">
-                <img src="/images/work_2.png" alt="Flexibility" className="w-full h-full object-contain" onError={(e) => e.currentTarget.style.display = 'none'} />
+                <img src="https://rapido.bike/images/work_2.png" alt="Flexibility" className="w-full h-full object-contain" onError={(e) => e.currentTarget.style.display = 'none'} />
               </div>
               <p className="text-[18px] text-gray-800 font-medium">Flexible hours and vacation. Night owls welcome.</p>
             </div>
             {/* Benefit 3 */}
             <div className="flex flex-col items-start text-left">
               <div className="w-20 h-20 mb-6">
-                <img src="/images/work_3.png" alt="Culture" className="w-full h-full object-contain" onError={(e) => e.currentTarget.style.display = 'none'} />
+                <img src="https://rapido.bike/images/work_3.png" alt="Culture" className="w-full h-full object-contain" onError={(e) => e.currentTarget.style.display = 'none'} />
               </div>
               <p className="text-[18px] text-gray-800 font-medium">Meet new cultures and enjoy our crew from all over the world</p>
             </div>
@@ -63,7 +63,7 @@ export default function Careers() {
           <div className="flex gap-6 overflow-x-auto pb-8 snap-x">
             {[1, 2, 3, 4].map((item) => (
               <div key={item} className="min-w-[300px] h-[250px] bg-gray-200 rounded-2xl flex-shrink-0 snap-center overflow-hidden">
-                <img src={`/images/career_carousel_${item}.png`} alt={`Carousel ${item}`} className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
+                <img src={`https://rapido.bike/images/career_carousel_${item}.png`} alt={`Carousel ${item}`} className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
               </div>
             ))}
           </div>

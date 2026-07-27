@@ -28,7 +28,7 @@ export default function AboutUs() {
           <div className="relative h-[600px] flex items-center justify-end pr-10">
             {/* Image 1 (Woman) */}
             <div className="absolute left-0 top-10 w-[260px] h-[340px] rounded-[130px] overflow-hidden shadow-sm z-20">
-              <img src="/images/about_us_1.png" alt="About Us Image 1" className="w-full h-full object-cover" onError={(e) => {
+              <img src="https://rapido.bike/images/about_us_1.png" alt="About Us Image 1" className="w-full h-full object-cover" onError={(e) => {
                 // Fallback to a gray block if image is missing
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.parentElement) {
@@ -38,7 +38,7 @@ export default function AboutUs() {
             </div>
             {/* Image 2 (Man pointing at phone) */}
             <div className="absolute right-0 bottom-0 w-[380px] h-[520px] rounded-[190px] overflow-hidden shadow-sm z-10">
-              <img src="/images/about_us_2.png" alt="About Us Image 2" className="w-full h-full object-cover" onError={(e) => {
+              <img src="https://rapido.bike/images/about_us_2.png" alt="About Us Image 2" className="w-full h-full object-cover" onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 if (e.currentTarget.parentElement) {
                   e.currentTarget.parentElement.style.backgroundColor = '#d1d5db';
@@ -67,7 +67,7 @@ export default function AboutUs() {
             {/* Founder 1 */}
             <div className="text-center">
               <div className="w-[100px] h-[100px] mx-auto bg-gray-200 rounded-[30px] mb-4 overflow-hidden shadow-sm">
-                <img src="/images/rishi.png" alt="Rishikesh S R" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
+                <img src="https://rapido.bike/images/rishi.png" alt="Rishikesh S R" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
               </div>
               <h3 className="text-[15px] font-bold text-[#333] mb-1">Rishikesh S R</h3>
               <p className="text-gray-500 text-[14px]">Founder</p>
@@ -75,7 +75,7 @@ export default function AboutUs() {
             {/* Founder 2 */}
             <div className="text-center">
               <div className="w-[100px] h-[100px] mx-auto bg-gray-200 rounded-[30px] mb-4 overflow-hidden shadow-sm">
-                <img src="/images/pavan.png" alt="Pavan Guntupalli" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
+                <img src="https://rapido.bike/images/pavan.png" alt="Pavan Guntupalli" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
               </div>
               <h3 className="text-[15px] font-bold text-[#333] mb-1">Pavan Guntupalli</h3>
               <p className="text-gray-500 text-[14px]">Founder</p>
@@ -83,7 +83,7 @@ export default function AboutUs() {
             {/* Founder 3 */}
             <div className="text-center">
               <div className="w-[100px] h-[100px] mx-auto bg-gray-200 rounded-[30px] mb-4 overflow-hidden shadow-sm">
-                <img src="/images/aravind.png" alt="Aravind Sanka" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
+                <img src="https://rapido.bike/images/aravind.png" alt="Aravind Sanka" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
               </div>
               <h3 className="text-[15px] font-bold text-[#333] mb-1">Aravind Sanka</h3>
               <p className="text-gray-500 text-[14px]">Founder</p>

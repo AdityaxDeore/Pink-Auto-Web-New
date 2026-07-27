@@ -6,8 +6,6 @@ const navItems = [
   { label: 'About Us', path: '/about' },
   { label: 'Safety', path: '/safety' },
   { label: 'Careers', path: '/careers' },
-  { label: 'Blog', path: '/blog' },
-  { label: 'Press', path: '/press' },
   { label: 'Contact Us', path: '/contact' },
 ];
 
